@@ -9,11 +9,11 @@ describe("generator", function(){
   });
 
   it("generate() function must generate 1000 numbers (array)", function() {
-    var test_array = 0;
+    var test_array = 10;
 
     var result = generator.generates (test_array);
     
-    expect (result.length).toBe(1000);
+    expect (result.length).toBe(10);
 
   });
 
@@ -29,14 +29,7 @@ describe("generator", function(){
 
     expect(test).toBe(true);
   });
-  it("should start with 0", function() {
-     var test_array = 0;
-     var test = generator.generates(0);  
-
-     expect(test_array).toBe(0); 
-
-});
-      
+   
 
     }); 
 
