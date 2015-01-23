@@ -17,13 +17,14 @@ describe("generator", function(){
 
   });
 
-  it("should generate a different order of numbers each time", function(){
+  it("should generate a unique number per each iteration", function(){
     var test_array = 0;
 
     var result = generator.generates (test_array);
     
     var test = result.every(function(num, index){
-      return index < 1000;
+      return result.indexOf(num) > -1;
+
 
     });
 
