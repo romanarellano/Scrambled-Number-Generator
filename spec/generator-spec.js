@@ -25,10 +25,19 @@ describe("generator", function(){
     var test = result.every(function(num, index){
       return result.indexOf(num) > -1;
 
-
     });
 
-  expect(test).toBe(true);
+    expect(test).toBe(true);
+  });
+  it("should start with 0", function() {
+     var test_array = 0;
+     var test = generator.generates(0);  
+
+     expect(test_array).toBe(0); 
 
 });
-});
+      
+
+    }); 
+
+
